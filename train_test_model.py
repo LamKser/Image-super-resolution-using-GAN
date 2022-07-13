@@ -180,12 +180,12 @@ if __name__ == '__main__':
     choice = 3
     if choice == 1:
         train('Dataset/DIV2K_train_HR',
-              'Weight_generation',
+              'weight',
               (24, 24))
     elif choice == 2:
         validation('Dataset/Set14/image_SRF_4/img_005_SRF_4_HR.png',
                    'Dataset/Set14/image_SRF_4/img_005_SRF_4_LR.png',
-                   'ok/tanh/24_96/e_77.h5')
+                   'weight/e_77.h5')
     elif choice == 3:
         test('Dataset/Set14/image_SRF_4/img_005_SRF_4_LR.png',
-             'ok/tanh/24_96/e_77.h5')
+             'weight/e_77.h5')
