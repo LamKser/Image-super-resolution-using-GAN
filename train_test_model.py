@@ -100,7 +100,7 @@ def train(hr_train_path, save_path, lr_size, batch_size=16, epochs=50):
         # Report the progress during training.
 
         generator.save_weights(
-            save_path + '/{}_{}/e_{}_sigmoid.h5'.format(lr_size, (lr_size[0] * 4, lr_size[1] * 4), e + 1))
+            save_path + '/{}_{}/e_{}.h5'.format(lr_size, (lr_size[0] * 4, lr_size[1] * 4), e + 1))
         # psnr = validation(e + 1)
         print("epoch {}:  g_loss: {} - d_loss: {}".format(e + 1, g_loss, d_loss))
     return g, d
