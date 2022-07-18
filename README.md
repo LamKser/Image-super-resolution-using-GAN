@@ -1,4 +1,4 @@
-# **Enhance image resolution using a Generative Adversarial Network**
+# **Enhance image resolution using a Generative Adversarial Network (SRGAN)**
 * **Team member**
     * [Dinh Hoang Lam](https://github.com/LamKser)
     * [Tran Duy Ngoc Bao](https://github.com/TranDuyNgocBao)
