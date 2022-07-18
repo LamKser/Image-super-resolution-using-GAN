@@ -1,1 +1,0 @@
-You can download DIV2K datasets here: https://data.vision.ee.ethz.ch/cvl/DIV2K/
