@@ -20,5 +20,9 @@ Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04
 ### **1. Training set**
 * We use DIV2K dataset for training the model, you can download [here](https://github.com/LamKser/Image-super-resolution-using-GAN/tree/main/dataset).
 * Then doing random crop the image with size 96x96 for HR image and resize to 24x24 for LR image
+* After cropping, we normalize HR and LR images to range [-1, 1]
 ### **2. Test set**
 * You can download Set5, Set14, and Urban100 datasets [here](https://github.com/LamKser/Image-super-resolution-using-GAN/tree/main/dataset).
+
+## **Run model**
+### **Training**
