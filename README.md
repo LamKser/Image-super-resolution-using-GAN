@@ -11,7 +11,7 @@ Original paper: [Photo-Realistic Single Image Super-
 Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802?context=cs).
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/83662223/179677280-874d1f3f-bb72-4efe-8012-6075bb0b8cac.jpeg">
+    <img src="https://user-images.githubusercontent.com/83662223/179677280-874d1f3f-bb72-4efe-8012-6075bb0b8cac.jpeg" width="70%" height="70%">
 </div>
 <p align="center">
     <strong>Figure 1:</strong> SRGAN architecture
