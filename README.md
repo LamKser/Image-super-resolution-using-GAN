@@ -3,7 +3,7 @@
     * [Dinh Hoang Lam](https://github.com/LamKser)
     * [Tran Duy Ngoc Bao](https://github.com/TranDuyNgocBao)
     * [Tran Nguyen Phuc Vinh](https://github.com/Lasky0908)
-* Our report: [PDF](https://drive.google.com/file/d/1VkG2oIkthjXusgZRXgoCorzbCA-ZIhZP/view?usp=sharing)
+* Our report: [PDF](https://drive.google.com/file/d/1E4LMsEhZwS747aOu_rLXSmuXMrnNJH_h/view?usp=sharing)
 * Web demo with Flask:  
    * Download source code [**Web-app**](https://github.com/LamKser/image-super-resolution-web-app) and run `app.py`
 ## **SRGAN architecture**
