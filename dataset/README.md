@@ -1,8 +1,8 @@
 # Download dataset
 ## 1. Training set
-For training, we use **DIV2K** dataset which consists of 800 2K resolution images for training, 100 images for validation, and 100 images for testing.
+For training, we use `DIV2K` dataset which consists of 800 2K resolution images for training, 100 images for validation, and 100 images for testing.
 
-Link download DIV2K training set: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/), or [DIV2K_train_HR](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip).
+Link download `DIV2K` training set: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/), or [DIV2K_train_HR](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip).
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/83662223/179549841-d6af3432-aec7-4aa5-aba4-990c1c47b189.png" width="20%" height="20%" />
@@ -15,7 +15,7 @@ Link download DIV2K training set: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV
 </p>
 
 ## 2. Test set
-For test set, we use 3 datasets **Set5**, **Set14**, and **Urban100** for testing the performance of SRGAN model.
+For test set, we use 3 datasets `Set5`, `Set14`, and `Urban100` for testing the performance of SRGAN model.
 
 Link download test set: [Set5](https://uofi.box.com/shared/static/kfahv87nfe8ax910l85dksyl2q212voc.ziphttp://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [Set14](https://uofi.box.com/shared/static/igsnfieh4lz68l926l8xbklwsnnk8we9.zip), [Urban100](https://uofi.box.com/shared/static/65upg43jjd0a4cwsiqgl6o6ixube6klm.zip)
 
