@@ -15,7 +15,7 @@ Link download `DIV2K` training set: [DIV2K](https://data.vision.ee.ethz.ch/cvl/D
 </p>
 
 ## 2. Test set
-For test set, we use 3 datasets `Set5`, `Set14`, and `Urban100` for testing the performance of SRGAN model.
+For test set, we use 3 datasets `Set5`, `Set14`, and `Urban100` for testing the performance of `SRGAN` model.
 
 Link download test set: [Set5](https://uofi.box.com/shared/static/kfahv87nfe8ax910l85dksyl2q212voc.ziphttp://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [Set14](https://uofi.box.com/shared/static/igsnfieh4lz68l926l8xbklwsnnk8we9.zip), [Urban100](https://uofi.box.com/shared/static/65upg43jjd0a4cwsiqgl6o6ixube6klm.zip)
 
