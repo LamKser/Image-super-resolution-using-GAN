@@ -106,7 +106,7 @@ def train(hr_train_path, save_path, lr_size, batch_size=16, epochs=50):
     return g, d
 
 
-def validation(hr_valid_path, lr_valid_path, weight_path, t=1):
+def validation(hr_valid_path, lr_valid_path, weight_path):
     generator = srgan.generator(Input(shape=(None, None, 3)))
     generator.load_weights(weight_path)
     hr_valid, lr_valid = data.load_data_val(hr_valid_path, lr_valid_path)
