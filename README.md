@@ -57,8 +57,17 @@ lr_test_path = 'Your_image'
 weight_path = 'weight/e_77.h5' # You can change the path
 ```
 ## **Result**
-<div>
-<img src="result/comic.png">
-<img src="result/butterfly.png">
-<img src="result/urban.png">
+<div align="center">
+   <img src="result/comic.png" width="40%" height="40%">
+   <img src="result/butterfly.png" width="50%" height="50%">
 </div>
+<p align="center">
+    <strong>Figure 2:</strong> Set14 and Set5 dataset
+</p>
+
+<div align="center">
+   <img src="result/urban.png" width="70%" height="70%">
+</div>
+<p align="center">
+    <strong>Figure 4:</strong> Urban dataset
+</p>
