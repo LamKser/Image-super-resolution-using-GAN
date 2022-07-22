@@ -32,7 +32,7 @@ Change the `choice` variable to run the model
 2: Validate model
 3: Test model 
 ```
-### :fire: :hourglass: **1. Training**
+### :hourglass: **1. Training**
 * :file_folder: Set the train data path `hr_train_path = Dataset/DIV2K` and the LR image size `lr_size = (24, 24)`, then the HR image size equals LR image size times 4 `hr_size = (96, 96)`.
 * You can use other dataset with different LR image size for training by set up:
 ```Python
