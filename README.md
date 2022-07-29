@@ -69,5 +69,5 @@ weight_path = 'weight/e_77.h5' # You can change the path
    <img src="result/urban.png" width="70%" height="70%">
 </div>
 <p align="center">
-    <strong>Figure 4:</strong> Urban dataset
+    <strong>Figure 3:</strong> Urban dataset
 </p>
