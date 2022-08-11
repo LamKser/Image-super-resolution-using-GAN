@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import cv2
+from skimage.metrics import structural_similarity
 
 srgan = SRGAN()
 
@@ -123,6 +124,11 @@ def validation(hr_valid_path, lr_valid_path, weight_path):
     lr = np.asarray((lr_valid[0] + 1) * 127.5, dtype=np.uint8)
     sr = np.asarray((sr_img[0] + 1) * 127.5, dtype=np.uint8)
     psnr = cv2.PSNR(hr, sr)
+    
+    ssim_B = structural_similarity(lr[:, :, 0], sr[:, :, 0])
+    ssim_G = structural_similarity(lr[:, :, 1], sr[:, :, 1])
+    ssim_R = structural_similarity(lr[:, :, 2], sr[:, :, 2])
+    ssim = (ssim_R + ssim_G + ssim_B) / 3
     # plt.figure(figsize=(12, 12))
     plt.subplot(131)
     plt.imshow(lr)
@@ -131,7 +137,7 @@ def validation(hr_valid_path, lr_valid_path, weight_path):
 
     plt.subplot(132)
     plt.imshow(sr)
-    plt.title("SR image\n PSNR: " + str(psnr))
+    plt.title("SR image\n PSNR: {:.2f}\n SSIM: {:.2f}".format(psnr, ssim))
     plt.axis('off')
 
     plt.subplot(133)
