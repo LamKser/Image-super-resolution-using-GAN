@@ -181,9 +181,38 @@ def test(lr_test_path, weight_path):
     cv2.imwrite('image result/lr_test.png', lr[:, :, ::-1])
     cv2.imwrite('image result/sr_test.png', sr[:, :, ::-1])
 
+    
+def test_video(video_file, lr_file, sr_file, weight_path, scale=4, from_high_resolution=True):
+    generator = srgan.generator(Input(shape=(None, None, 3)))
+    generator.load_weights(weight_path)
+
+    video, lr_video, sr_video = data.load_video(video_file, lr_file, sr_file, scale, from_high_resolution)
+    while video.isOpened():
+        ret, lr_frame = video.read()
+        if ret:
+            lr_frame = cv2.cvtColor(lr_frame, cv2.COLOR_BGR2RGB)
+            height, width, _ = lr_frame.shape
+            lr_frame = cv2.resize(lr_frame, (width // 4, height // 4))
+
+            if lr_video is not None:
+                lr_video.write(lr_frame[:, :, ::-1])
+
+            lr_frame = np.expand_dims(np.array(lr_frame), axis=0)
+            lr_frame = lr_frame / 127.5 - 1
+            sr_frame = generator.predict(lr_frame)
+            sr_frame = np.asarray((sr_frame + 1) * 127.5, dtype=np.uint8)
+            sr_video.write(sr_frame[0][:, :, ::-1])
+            cv2.waitKey(0)
+        else:
+            break
+    video.release()
+    lr_video.release()
+    sr_video.release()
+    cv2.destroyAllWindows()
+    
 
 if __name__ == '__main__':
-    choice = 3
+    choice = 4
     if choice == 1:
         train('Dataset/DIV2K_train_HR',
               'weight',
@@ -195,3 +224,9 @@ if __name__ == '__main__':
     elif choice == 3:
         test('Dataset/Set14/image_SRF_4/img_005_SRF_4_LR.png',
              'weight/e_77.h5')
+    elif choice == 4:
+        test_video("test video/origin/HR2.mp4",
+                   "test video/LR_video/LR2.mp4",
+                   "test video/Enhance/SR2.mp4",
+                   'weight/e_77.h5', 
+                   scale=4)
