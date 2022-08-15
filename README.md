@@ -31,6 +31,7 @@ Change the `choice` variable in `train_test_model.py` to run the model
 1: Train model
 2: Validate model
 3: Test model 
+4: Test on video
 ```
 ### :hourglass: **1. Training**
 * :file_folder: Set the train data path `hr_train_path = Dataset/DIV2K` and the LR image size `lr_size = (24, 24)`, then the HR image size equals LR image size times 4 `hr_size = (96, 96)`.
@@ -56,6 +57,15 @@ Set the LR test image paths for comparing the SR image with HR and LR images
 lr_test_path = 'Your_image'
 weight_path = 'weight/e_77.h5' # You can change the path
 ```
+### :film_strip: **4. Test on video**
+We use the HR video, then resize to LR video by divide the height and width by `scale=4`
+```Python
+# You don't have to create LR video and SR video, just name them
+video_file = 'Your HR video file'
+lr_file = 'Your LR video file name'
+sr_file = 'Your SR video file name'
+```
+Change `from_high_resolution=False` if you want to upload your LR video, not the HR video
 ## :sun_with_face: **Result**
 <div align="center">
    <img src="result/comic.png" width="40%" height="40%">
@@ -71,3 +81,5 @@ weight_path = 'weight/e_77.h5' # You can change the path
 <p align="center">
     <strong>Figure 3:</strong> Urban dataset
 </p>
+
+Test on video: [Test SRGAN model](https://www.youtube.com/playlist?list=PLwwBtBG9sP7BoIRcfircWN-O8fSlyg3Dy)
