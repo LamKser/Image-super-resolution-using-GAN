@@ -66,6 +66,8 @@ lr_file = 'Your LR video'
 sr_file = 'Your SR video'
 ```
 Change `from_high_resolution=False` if you want to upload your LR video, not the HR video
+
+`NOTE:` Make sure the height and width are under 500 pixels because of running out of memory on GPU
 ## :sun_with_face: **Result**
 <div align="center">
    <img src="result/comic.png" width="40%" height="40%">
