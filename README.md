@@ -61,9 +61,9 @@ weight_path = 'weight/e_77.h5' # You can change the path
 We use the HR video, then resize to LR video by divide the height and width by `scale=4`
 ```Python
 # You don't have to create LR video and SR video, just name them
-video_file = 'Your HR video file'
-lr_file = 'Your LR video file name'
-sr_file = 'Your SR video file name'
+video_file = 'Your HR video'
+lr_file = 'Your LR video'
+sr_file = 'Your SR video'
 ```
 Change `from_high_resolution=False` if you want to upload your LR video, not the HR video
 ## :sun_with_face: **Result**
