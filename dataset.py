@@ -1,7 +1,5 @@
 import os
 import cv2
-import matplotlib.pyplot as plt
-import random
 import numpy as np
 
 
@@ -65,6 +63,33 @@ def load_data_test(lr_test):
     lr_test = cv2.cvtColor(lr_test, cv2.COLOR_BGR2RGB)
     lr_test = np.expand_dims(np.array(lr_test), axis=0)
     return np.array(lr_test, dtype=float)
+
+def load_video(video_file, lr_file, sr_file, scale, from_high_resolution):
+    video = cv2.VideoCapture(video_file)
+    lr_video = None
+
+    frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+    width = int(video.get(3))
+    height = int(video.get(4))
+    fps = video.get(cv2.CAP_PROP_FPS)
+    length = frames / fps
+
+    print("----------------Video Information----------------")
+    print("Frame:", frames)
+    print("Width:", width, 'px')
+    print("Height:", height, 'px')
+    print("FPS:", fps)
+    print("Video length:", length, 's')
+
+    if from_high_resolution:
+        width //= scale
+        height //= scale
+        lr_video = cv2.VideoWriter(lr_file, cv2.VideoWriter_fourcc(*'mp4v'),
+                                   fps, (width, height))
+    sr_video = cv2.VideoWriter(sr_file, cv2.VideoWriter_fourcc(*'mp4v'),
+                                   fps, (width * 4, height * 4))
+
+    return video, lr_video, sr_video
 
 
 def batch_data(examples, hr_datasets, lr_datasets, batch_size):
