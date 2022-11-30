@@ -1,3 +1,17 @@
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)][1]
+[![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)][2]
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)][3]
+[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)][4]
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)][5]
+[![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)][6]
+
+[1]: https://www.tensorflow.org/?gclid=Cj0KCQiA-JacBhC0ARIsAIxybyMp6CdZTnqaeQBwUg1Huc3S9OrO4-NAbOOJHbnxacMMetfutDBH5R0aAgJ6EALw_wcB
+[2]: https://keras.io/
+[3]: https://scikit-learn.org/stable/index.html
+[4]: https://numpy.org/devdocs/index.html
+[5]: https://matplotlib.org/
+[6]: https://docs.opencv.org/4.x/
+
 # **Enhance image resolution using a Generative Adversarial Network**
 * **Team member**
     * [Dinh Hoang Lam](https://github.com/LamKser)
