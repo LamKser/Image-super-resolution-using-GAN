@@ -12,7 +12,7 @@
 [5]: https://matplotlib.org/
 [6]: https://docs.opencv.org/4.x/
 
-# **Enhance image resolution using a Generative Adversarial Network**
+# AIP391 Project: Enhance image resolution using a Generative Adversarial Network
 * **Team member**
     * [Dinh Hoang Lam](https://github.com/LamKser)
     * [Tran Duy Ngoc Bao](https://github.com/TranDuyNgocBao)
