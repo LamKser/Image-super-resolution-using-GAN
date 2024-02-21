@@ -71,15 +71,6 @@ Set the LR test image paths for comparing the SR image with HR and LR images
 lr_test_path = 'Your_image'
 weight_path = 'weight/e_77.h5' # You can change the path
 ```
-### :film_strip: **4. Test on video**
-We use the HR video, then resize to LR video by divide the height and width by `scale=4`
-```Python
-# You don't have to create LR video and SR video, just name them
-video_file = 'Your HR video'
-lr_file = 'Your LR video'
-sr_file = 'Your SR video'
-```
-Change `from_high_resolution=False` if you want to upload your LR video, not the HR video
 
 `NOTE:` Make sure the height and width are under 500 pixels because of running out of memory on GPU
 ## :sun_with_face: **Result**
@@ -98,4 +89,3 @@ Change `from_high_resolution=False` if you want to upload your LR video, not the
     <strong>Figure 3:</strong> Urban dataset
 </p>
 
-Test on video: [Test SRGAN model](https://www.youtube.com/playlist?list=PLwwBtBG9sP7BoIRcfircWN-O8fSlyg3Dy)
